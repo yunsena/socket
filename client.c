@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
                 return 1;
         }
         serveraddr.sin_family = AF_INET;
-        serveraddr.sin_addr.s_addr = inet_addr("172.17.0.10");
+        serveraddr.sin_addr.s_addr = inet_addr("localhost");
         serveraddr.sin_port = htons(8080);
  
         client_len = sizeof(serveraddr);
